@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7C008DFF"
+    tools:context=".Activities.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/textViewChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_margin="5dp"
+            android:text="CHAT"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/backSearchImageButton"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_arrow_back_black_24dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#FFFFFF"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="17sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_search_black_24dp"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/addButton"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_add_black_24dp"
+                android:visibility="invisible" />
+
+
+            <ImageButton
+                android:id="@+id/logoutButton"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_person_outline_black_24dp"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/navigateButton"
+                android:layout_width="35dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_navigate_before_black_24dp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner_receptor">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

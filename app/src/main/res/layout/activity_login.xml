@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C008DFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <EditText
+                    android:id="@+id/userNameEditText"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="USER"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences|textAutoCorrect"
+                    android:maxLines="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="PASSWORD"
+                    android:inputType="textPassword"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/viewPassWordImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_marginRight="77dp"
+                    android:background="@drawable/ic_remove_red_eye_black_24dp"
+                    android:focusableInTouchMode="true"
+                    android:nextClusterForward="@id/passwordEditText"
+                    android:nextFocusForward="@id/passwordEditText" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="7dp"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/rememberCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember      "
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
