@@ -3,7 +3,7 @@
 PersonalChat is an experimental app to talk with your clients. One admin and a many clients to talk
 
 ## Accounts
-### admin
+### Admin
 You can create one o more users to talk in real time<br/>
 email: emailtest@gmail.com<br/>
 pass: emailtest
